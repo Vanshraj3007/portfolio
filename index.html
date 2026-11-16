@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -247,3 +248,254 @@
   <script src="chatbot.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio: Vanshraj Singh | Personal Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+
+  <!-- Tech background + interactive helpers -->
+  <canvas id="techCanvas"></canvas>
+  <div id="scrollProgress"></div>
+  <button id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Dark mode button (used by script.js) -->
+  <button id="themeToggle">Switch to Dark Mode</button>
+
+  <header class="site-header" id="home">
+    <h1>Vanshraj Singh</h1>
+    <p class="tagline">B.Tech Computer Science Engineering student.</p>
+
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a> |
+      <a href="#about">About Me</a> |
+      <a href="#skills">Skills</a> |
+      <a href="#projects">Projects</a> |
+      <a href="#contact">Contact Information</a>
+    </nav>
+
+    <!-- Replace profile.jpeg with your photograph's filename -->
+    <div class="profile-container">
+      <img
+        src="profile.jpeg"
+        alt="Vanshraj Singh"
+        class="profile-photo"
+      >
+    </div>
+  </header>
+
+  <main>
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <p>
+        I am a B.Tech student pursuing a degree in Computer Science and Engineering, with a strong interest in software development, programming, and emerging technologies. I am continuously enhancing my technical skills, problem-solving abilities, and practical knowledge through coding practice, academic projects, and hands-on learning. I aspire to become a skilled software developer and contribute to innovative technology-driven solutions.
+      </p>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+      </ul>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">My Projects</h2>
+      <p>
+        Public repositories from
+        <a href="https://github.com/Vanshraj3007" target="_blank" rel="noopener noreferrer">github.com/Vanshraj3007</a>,
+        grouped by language. Filter the list below.
+      </p>
+
+      <div class="project-filters" role="group" aria-label="Filter projects by language">
+        <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="filter-btn" data-filter="C" aria-pressed="false">C</button>
+        <button type="button" class="filter-btn" data-filter="C++" aria-pressed="false">C++</button>
+        <button type="button" class="filter-btn" data-filter="JavaScript" aria-pressed="false">JavaScript</button>
+        <button type="button" class="filter-btn" data-filter="Python" aria-pressed="false">Python</button>
+      </div>
+
+      <ul class="project-grid">
+        <li class="project-card" data-language="JavaScript">
+          <h3>Quiz</h3>
+          <p class="project-language">JavaScript</p>
+          <p>
+            A multiple-choice quiz app with instant feedback and score tracking,
+            built to make practice more engaging.
+          </p>
+          <div class="project-actions">
+            <a
+              class="project-btn project-btn-github"
+              href="https://github.com/Vanshraj3007/quiz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >View on GitHub</a>
+            <a
+              class="project-btn project-btn-demo"
+              href="https://quiz-one-chi-45.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Live Demo</a>
+          </div>
+        </li>
+
+        <li class="project-card" data-language="JavaScript">
+          <h3>Book Reading List Application</h3>
+          <p class="project-language">JavaScript</p>
+          <p>
+            A web application to keep track of books you want to read,
+            built to help students manage their reading list.
+          </p>
+          <div class="project-actions">
+            <a
+              class="project-btn project-btn-demo"
+              href="https://studentreadinglist-lovat.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Live Demo</a>
+          </div>
+        </li>
+
+        <li class="project-card" data-language="Python">
+          <h3>Python Program Collection</h3>
+          <p class="project-language">Python</p>
+          <p>
+            A collection of Python programs for practising syntax, loops,
+            functions, recursion, data structures, and object-oriented programming.
+          </p>
+          <div class="project-actions">
+            <a
+              class="project-btn project-btn-github"
+              href="https://github.com/Vanshraj3007/Python_programs_collection"
+              target="_blank"
+              rel="noopener noreferrer"
+            >View on GitHub</a>
+          </div>
+        </li>
+
+        <li class="project-card" data-language="Python">
+          <h3>Python Basic 25bcon2179</h3>
+          <p class="project-language">Python</p>
+          <p>Basic Python programs from the public GitHub repository Python_basic_25bcon2179.</p>
+          <div class="project-actions">
+            <a
+              class="project-btn project-btn-github"
+              href="https://github.com/Vanshraj3007/Python_basic_25bcon2179"
+              target="_blank"
+              rel="noopener noreferrer"
+            >View on GitHub</a>
+          </div>
+        </li>
+
+        <li class="project-card" data-language="Python">
+          <h3>Python Basic 25bcon2179s</h3>
+          <p class="project-language">Python</p>
+          <p>Basic Python programs from the public GitHub repository Python_basic_25bcon2179s.</p>
+          <div class="project-actions">
+            <a
+              class="project-btn project-btn-github"
+              href="https://github.com/Vanshraj3007/Python_basic_25bcon2179s"
+              target="_blank"
+              rel="noopener noreferrer"
+            >View on GitHub</a>
+          </div>
+        </li>
+
+        <li class="project-card" data-language="Python">
+          <h3>Python Basic 25bcon2179f</h3>
+          <p class="project-language">Python</p>
+          <p>Basic Python programs from the public GitHub repository python_basic25bcon2179f.</p>
+          <div class="project-actions">
+            <a
+              class="project-btn project-btn-github"
+              href="https://github.com/Vanshraj3007/python_basic25bcon2179f"
+              target="_blank"
+              rel="noopener noreferrer"
+            >View on GitHub</a>
+          </div>
+        </li>
+      </ul>
+
+      <p id="projectsEmpty" class="projects-empty" hidden>
+        No public GitHub repositories in this language yet.
+      </p>
+    </section>
+
+    <section id="weather">
+      <h2>Weather</h2>
+
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Enter a city"
+      >
+
+      <button id="weatherButton">Get Weather</button>
+
+      <div id="weatherResult">
+        Enter a city to see the weather.
+      </div>
+    </section>
+  </main>
+
+  <section id="aiChatSection" class="ai-chat">
+    <h2>Ask My AI Assistant</h2>
+
+    <p>
+      Ask questions about this portfolio,
+      projects, and technologies.
+    </p>
+
+    <div
+      id="chatMessages"
+      aria-live="polite"
+    ></div>
+
+    <div class="chat-controls">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Ask a question..."
+      />
+
+      <button id="sendButton" type="button">
+        Send
+      </button>
+    </div>
+
+    <p id="chatStatus" role="status"></p>
+
+    <p class="chat-note">
+      AI chat is available during the local
+      classroom demonstration only.
+    </p>
+  </section>
+
+  <footer class="site-footer" id="contact">
+    <h2>Contact Information</h2>
+    <p>Email:
+      <a href="mailto:vanshkota1122@gmail.com">vanshkota1122@gmail.com</a>
+    </p>
+    <p>GitHub:
+      <a href="https://github.com/Vanshraj3007" target="_blank" rel="noopener noreferrer">Vanshraj3007</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="config.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
+>>>>>>> 9af7a462d067b7dc13c9abd6fda7fd2dc420a236
